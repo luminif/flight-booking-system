@@ -19,6 +19,12 @@ public class Aircraft {
     private String model;
     private Integer capacity;
 
+    @Column(name = "seats_per_row")
+    private Integer seatsPerRow;
+
+    @Column(name = "seat_letters")
+    private String seatLetters;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "airline_id")
     private Airline airline;
