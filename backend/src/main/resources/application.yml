@@ -1,3 +1,9 @@
+app:
+  security:
+    secret: ${JWT_SECRET}
+    access: 1
+    refresh: 30
+
 spring:
   application:
     name: airport
@@ -7,3 +13,11 @@ spring:
     password: ${DB_PASSWORD}
   liquibase:
     enabled: false
+
+api:
+  version: 1.0.0
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  override-with-generic-response: false
