@@ -10,6 +10,7 @@ CREATE TABLE flights (
     actual_departure TIMESTAMP,
     actual_arrival TIMESTAMP,
     status VARCHAR(20) DEFAULT 'SCHEDULED',
+    price DECIMAL(10, 2),
     FOREIGN KEY (airline_id) REFERENCES airlines(id),
     FOREIGN KEY (aircraft_id) REFERENCES aircrafts(id),
     FOREIGN KEY (departure_airport_id) REFERENCES airports(id),

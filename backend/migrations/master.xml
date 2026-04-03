@@ -18,4 +18,5 @@
     <include file="create_flights.sql"/>
     <include file="create_tickets.sql"/>
     <include file="create_flight_crew.sql"/>
+    <include file="insert_data.sql"/>
 </databaseChangeLog>
